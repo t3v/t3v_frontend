@@ -1,0 +1,76 @@
+{
+  "name": "t3v/t3v_frontend",
+  "type": "typo3-cms-extension",
+  "description": "The frontend extension of TYPO3voilà.",
+  "authors": [
+    {
+      "name": "Maik Kempe",
+      "email": "mkempe@bitaculous.com",
+      "role": "Developer"
+    }
+  ],
+  "keywords": [
+    "CMS",
+    "Extension",
+    "Frontend",
+    "T3v",
+    "TYPO3",
+    "TYPO3voilà",
+    "UH LÁLÁ"
+  ],
+  "homepage": "https://t3v.github.io/t3v_frontend/",
+  "support": {
+    "issues": "https://github.com/t3v/t3v_frontend/issues"
+  },
+  "license": "MIT",
+  "config": {
+    "bin-dir": ".build/bin",
+    "vendor-dir": ".build/vendor"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "replace": {
+    "typo3-ter/t3v_frontend": "self.version"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://composer.typo3.org"
+    }
+  ],
+  "require": {
+    "php": ">= 7.2",
+    "typo3/cms-core": "^9.5.30 || ^10.4.20 || ^11.5",
+    "t3v/t3v_core": "dev-develop",
+    "t3v/t3v_translations": "dev-develop"
+  },
+  "require-dev": {
+    "ext-dom": "*",
+    "t3v/t3v_testing": "^1.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "T3v\\T3vFrontend\\": "Classes"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "T3v\\T3vTesting\\Tests\\": ".build/web/typo3conf/ext/t3v_testing/Tests/",
+      "T3v\\T3vFrontend\\Tests\\": "Tests"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "app-dir": ".build",
+      "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "extension-key": "t3v_frontend",
+      "web-dir": ".build/web"
+    }
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "mkdir -p .build/web/typo3conf/ext/",
+      "[ -L .build/web/typo3conf/ext/t3v_frontend ] || ln -snvf ../../../../. .build/web/typo3conf/ext/t3v_frontend"
+    ]
+  }
+}
