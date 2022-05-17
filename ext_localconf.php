@@ -7,12 +7,15 @@
 
 defined('TYPO3_MODE') or die();
 
-// (static function () {
-//     // === Variables ===
-//
-//     // $namespace = 'T3v';
-//     // $extensionKey = 't3v_frontend';
-//     // $extensionSignature = \T3v\T3vCore\Utility\ExtensionUtility::getSignature($namespace, $extensionKey);
-//
-//     // === T3v Generator ===
-// })();
+(static function () {
+    // === Variables ===
+
+    $extensionKey = 't3v_frontend';
+
+    // === Hooks ===
+
+    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tslib/class.tslib_fe.php']['contentPostProc-all'][$extensionKey] =
+        \T3v\T3vFrontend\Hooks\ContentPostProcAllHook::class . '->replaceContent';
+
+    // === T3v Generator ===
+})();
