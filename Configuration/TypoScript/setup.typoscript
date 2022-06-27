@@ -1,9 +1,15 @@
-# ----------------------
-# | T3v Frontend Setup |
-# ----------------------
+/*
+  ----------------------
+  | T3v Frontend Setup |
+  ----------------------
+*/
 
-# === Imports ===
+/*
+  === Imports ===
+*/
 
 @import './Base/setup.typoscript'
 
-# === T3v Generator ===
+/*
+  === T3v Generator ===
+*/
