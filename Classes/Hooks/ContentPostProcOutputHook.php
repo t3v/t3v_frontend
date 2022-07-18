@@ -6,19 +6,19 @@ namespace T3v\T3vFrontend\Hooks;
 use TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController;
 
 /**
- * The content post proc all hook class.
+ * The content post proc output hook class.
  *
  * @package T3v\T3vFrontend\Hooks
  */
-class ContentPostProcAllHook
+class ContentPostProcOutputHook
 {
     /**
-     * Replaces the content output.
+     * Processes the content output.
      *
      * @param array $parameters The parameters delivered by the caller (`tslib_fe`)
      * @param TypoScriptFrontendController $parentObject The parent object (`tslib_fe`)
      */
-    public function replaceContent(array &$parameters, TypoScriptFrontendController $parentObject): void
+    public function process(array &$parameters, TypoScriptFrontendController $parentObject): void
     {
         if (TYPO3_MODE === 'FE') {
             // Fetches the configuration:
