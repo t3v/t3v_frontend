@@ -13,7 +13,7 @@ use TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController;
 class ContentPostProcAllHook
 {
     /**
-     * Replaces content.
+     * Replaces the content output.
      *
      * @param array $parameters The parameters delivered by the caller (`tslib_fe`)
      * @param TypoScriptFrontendController $parentObject The parent object (`tslib_fe`)
