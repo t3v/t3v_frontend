@@ -12,10 +12,14 @@ defined('TYPO3_MODE') or die();
 
     $extensionKey = 't3v_frontend';
 
-    // === Hooks ===
+    // === Frontend ===
 
-    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tslib/class.tslib_fe.php']['contentPostProc-all'][$extensionKey] =
-        \T3v\T3vFrontend\Hooks\ContentPostProcAllHook::class . '->replaceContent';
+    if (TYPO3_MODE === 'FE') {
+        // --- Hooks ---
+
+        $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tslib/class.tslib_fe.php']['contentPostProc-all'][$extensionKey] =
+            \T3v\T3vFrontend\Hooks\ContentPostProcAllHook::class . '->replaceContent';
+    }
 
     // === T3v Generator ===
 })();
