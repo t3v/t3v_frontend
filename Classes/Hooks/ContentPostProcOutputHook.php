@@ -18,7 +18,7 @@ class ContentPostProcOutputHook
      * @param array $parameters The parameters delivered by the caller (`tslib_fe`)
      * @param TypoScriptFrontendController $parentObject The parent object (`tslib_fe`)
      */
-    public function process(array &$parameters, TypoScriptFrontendController $parentObject): void
+    public function process(array $parameters, TypoScriptFrontendController $parentObject): void
     {
         if (TYPO3_MODE === 'FE') {
             // Fetches the configuration:
