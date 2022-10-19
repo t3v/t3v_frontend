@@ -6,7 +6,7 @@
 Dependencies
 ------------
 
-* TYPO3 CMS 9.5 or greater
+* TYPO3 CMS 9.5
 * T3v Core extension
 * T3v Translations extension
 
