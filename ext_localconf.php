@@ -1,9 +1,11 @@
 <?php
+declare(strict_types=1);
+
 /**
  * The local extension configuration.
- *
- * @noinspection PhpFullyQualifiedNameUsageInspection
  */
+
+use T3v\T3vFrontend\Hooks\ContentPostProcOutputHook;
 
 defined('TYPO3') or die();
 
@@ -18,8 +20,7 @@ defined('TYPO3') or die();
         // --- Hooks ---
 
         $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tslib/class.tslib_fe.php']['contentPostProc-output'][$extensionKey] =
-            \T3v\T3vFrontend\Hooks\ContentPostProcOutputHook::class . '->process';
+            ContentPostProcOutputHook::class . '->process';
     }
-
     // === T3v Generator ===
 })();
