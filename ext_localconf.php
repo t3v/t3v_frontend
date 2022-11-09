@@ -22,5 +22,6 @@ defined('TYPO3') or die();
         $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tslib/class.tslib_fe.php']['contentPostProc-output'][$extensionKey] =
             ContentPostProcOutputHook::class . '->process';
     }
+
     // === T3v Generator ===
 })();
