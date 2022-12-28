@@ -3,8 +3,8 @@ CHANGELOG
 
 Notable changes will be documented in this file. The project adheres to [Semantic Versioning].
 
-Unreleased
-----------
+2.0.0
+-----
 
 * Changed hook from `contentPostProc-output` to `contentPostProc-all`
 * Support for TYPO3 10.4 and up via middleware
