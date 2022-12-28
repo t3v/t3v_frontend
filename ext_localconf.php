@@ -13,7 +13,7 @@ defined('TYPO3') or die();
     // === Frontend ===
 
     if (TYPO3_MODE === 'FE') {
-        // Register `ContentPostProcAllHook` for cached content:
+        // Registers the `ContentPostProcAllHook` for cached content:
         $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tslib/class.tslib_fe.php']['contentPostProc-all']['zz_t3vfrontend'] =
             ContentPostProcAllHook::class . '->process';
     }
