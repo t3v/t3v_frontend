@@ -3,6 +3,11 @@ CHANGELOG
 
 Notable changes will be documented in this file. The project adheres to [Semantic Versioning].
 
+Unreleased
+----------
+
+* Updated namespace to `T3v\T3vFrontend\Middlewares` for consistent naming
+
 2.0.0
 -----
 
