@@ -5,7 +5,7 @@ declare(strict_types=1);
  * The request middlewares configuration.
  */
 
-use T3v\T3vFrontend\Middlewares\ReplaceContentMiddleware;
+use T3v\T3vFrontend\Middleware\ReplaceContentMiddleware;
 
 return [
     'frontend' => [

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace T3v\T3vFrontend\Middlewares;
+namespace T3v\T3vFrontend\Middleware;
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
@@ -15,7 +15,7 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 /**
  * The replace content middleware class.
  *
- * @package T3v\T3vFrontend\Middlewares
+ * @package T3v\T3vFrontend\Middleware
  */
 class ReplaceContentMiddleware implements MiddlewareInterface
 {
