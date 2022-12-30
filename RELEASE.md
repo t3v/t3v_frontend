@@ -7,7 +7,7 @@ RELEASE
 Steps
 -----
 
-1. Update Changelog (`CHANGELOG.md`)
-2. Bump the `version` property in the extension configuration (`ext_emconf.php`)
+1. Update the changelog (`CHANGELOG.md`)
+2. Bump `version` in the extension configuration (`ext_emconf.php`)
 3. Push changes
 4. Create a new tag
