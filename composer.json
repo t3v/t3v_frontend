@@ -45,8 +45,7 @@
   "require": {
     "php": ">= 7.4",
     "typo3/cms-core": "^10.4.34 || ^11.5.21",
-    "t3v/t3v_core": "dev-develop",
-    "t3v/t3v_translations": "dev-develop"
+    "t3v/t3v_core": "dev-develop"
   },
   "require-dev": {
     "ext-dom": "*",
