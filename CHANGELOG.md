@@ -3,8 +3,8 @@ CHANGELOG
 
 Notable changes will be documented in this file. The project adheres to [Semantic Versioning].
 
-Unreleased
-----------
+2.1.0
+-----
 
 * Removed `ContentPostProcAllHook` which is no longer supported
 * Removed not used `t3v_translations` dependency
