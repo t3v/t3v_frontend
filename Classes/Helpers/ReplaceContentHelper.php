@@ -10,7 +10,8 @@ use function preg_replace;
 /**
  * The replace content helper class.
  *
- * The helper encapsulates the content replacement functionality.
+ * The helper encapsulates the content replacement functionality which is used either in the `ReplaceContentMiddleware` or in the
+ * `contentPostProc-all` hook.
  *
  * @package T3v\T3vFrontend\Helpers
  */
