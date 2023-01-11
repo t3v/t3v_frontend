@@ -3,8 +3,8 @@ CHANGELOG
 
 Notable changes will be documented in this file. The project adheres to [Semantic Versioning].
 
-Unreleased
-----------
+2.2.0
+-----
 
 * Reverted the remove of the `ContentPostProcAll` hook, not until the next major version
 * Minor changes and clean up
