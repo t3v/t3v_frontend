@@ -7,6 +7,9 @@ Unreleased
 ----------
 
 * Reverted the remove of the `ContentPostProcAll` hook, not until the next major version
+* Minor changes and clean up
+* Updated Travis CI configuration
+* Updated dependencies
 
 2.1.0
 -----
