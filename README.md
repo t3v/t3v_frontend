@@ -6,9 +6,13 @@
 Dependencies
 ------------
 
+### Core
+
 * TYPO3 CMS 9.5 or greater
+
+### TYPO3voilà
+
 * T3v Core extension
-* T3v Translations extension
 
 Installation
 ------------
