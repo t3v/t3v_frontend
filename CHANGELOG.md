@@ -3,9 +3,10 @@ CHANGELOG
 
 Notable changes will be documented in this file. The project adheres to [Semantic Versioning].
 
-Unreleased
-----------
+2.3.0
+-----
 
+* Updated tests
 * Updated Composer configuration
 * Updated dependencies
 
