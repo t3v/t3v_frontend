@@ -31,7 +31,7 @@ class ReplaceContentHelper
      *
      *     replace {
      *       1 = TYPO3voilà
-     *       2 = TYPO3 Inspire People to Share
+     *       2 = Inspire People to Share
      *     }
      *   }
      * }
